@@ -1,0 +1,20 @@
+<html>
+<head>
+<title> George's Webpage </title>
+</head>
+<body bgcolor="fuchsia">
+<b><u>WELCOME TO GEORGE'S HOMEPAGE</u></b>
+<form name="input" action="script.php" method="get">
+Username: <input type="text" name="user"><br/>
+type of student:<br/>
+<input type="radio" name="student" value="ugrad">
+	undergraduate<br/>
+<input type="radio" name="student" value="grad">
+	Graduate<br/>
+Graduateing : <input type="checkbox" name="graduating">
+	<br/>
+<input type="submit" value="Submit">
+</form>
+<a href="https://www.facebook.com/george.macrae.10" target="blank"> my facebook page</a>
+</body>
+</html>

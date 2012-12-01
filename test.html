@@ -1,0 +1,18 @@
+<html>
+	<head>
+      	<script type="text/javascript">
+              	function show() { document.getElementById('area').style.display = 'block'; }
+              	function hide() { document.getElementById('area').style.display = 'none'; }
+      	</script>
+      	</head>
+	<body>        
+		<form name="radios" >
+		<INPUT TYPE=RADIO NAME="X" VALUE="H" onclick="show();"/>A<br /> 
+		Username<input id='area' style="display:none;" type="text" name="\user">
+		<INPUT TYPE=RADIO NAME="X" VALUE="L" onclick="show();"/>B <br />
+		<INPUT TYPE=RADIO NAME="X" VALUE="LL" onclick="show();"/>C<br />
+		
+		<TEXTAREA id="area" style="display: none;" NAME="data" ROWS=10 COLS=50></TEXTAREA>   
+		</form>
+	</body>
+</html>

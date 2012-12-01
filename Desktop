@@ -1,0 +1,98 @@
+#include<string.h>
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(void)
+{
+	printf("%s%c%c\n","Content-Type:text/html;charset= iso-8859-1",13,10);
+	int n = atoi(getenv("CONTENT_LENGTH"));
+	int x = 0;
+	int i = 8; //8 for each character in username= (where u is 0 and = is 8)
+	char inputArray[n];
+	
+	//initialize array to \0
+	for(x=0;x<n;x++)
+	{
+		inputArray[x]='\0';
+	}
+
+
+	fgets(inputArray, n+1, stdin);
+
+
+	//this if/while loop determines the number of character in username
+	x=i+1;
+	int u;
+	//if nothing inputed for username make array size 0;
+	if(inputArray[x] == '&' && inputArray[x+1] =='p')
+	{	
+		u=0;
+	}
+	else
+	{
+
+		while(inputArray[x] != '&' && inputArray[x+1] != 'p')
+			{
+				x++;
+			}
+
+		u=x-i-1;
+	}
+	printf("<br />");
+	char username[u];
+	//size of password	
+	int y;
+
+	y=n-u-19; //total char- (char in user)-19(8 for user 8 for pass 3 for ==&
+//	printf("n=%d,y=%d,x=%d<br />",n,y,u);
+	
+		
+	char password[y];
+
+	
+//	printf("chara user:%d, char passw:%d, i:%d<br />",u,y,i);
+	
+	//this part reads inputArray and puts the characters in the username
+	int j = 0;
+	i = 9;
+//	printf("%c",inputArray[i]);
+
+	if(inputArray[i] == '&' && inputArray[i+1] == 'p')
+	{
+		username[0]='\0';
+	}
+	else{
+
+		while(inputArray[i] != '&' && inputArray[i+1] != 'p')
+		{
+
+			username[j] = inputArray[i];
+			i++; 
+			j++;
+		}
+	}
+
+	while(inputArray[i] != '=')
+	{
+		i++;
+	}
+	i++; 
+	j=0;
+	//fill password
+	if(i==n)
+	{
+		password[0]='\0';
+	}
+	else
+	{
+		while(i <= n)
+		{
+			password[j] = inputArray[i];
+			i++;
+			j++;
+		}
+	}
+	printf("<br /> username:%s<br />password:%s <br />",username,password);
+
+	return 0;
+}

@@ -1,0 +1,13 @@
+<html>
+	<head>
+			<title>Example Server Communication</title>
+	</head>
+	<body>
+	
+		<form action="test2.cgi" method="get">
+			Age: <input name="myAge" type="text">
+			<input type="submit">
+		</form>
+</body>
+</html>
+

@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Catalogue</title>
+</head>
+
+<body bgcolor="green">
+	<a href="http://www.cs.mcgill.ca/~gmacra/homepage"> HOME<a><br/>
+	<br/>
+	<br/>
+<form action="catalogue.py" method="get">
+<!--========================= TABLE===============================
+==================================================================-->
+	<!-- !!!!TOP ROW !!!! --->
+	<table border="1">
+		<tr>
+		<th></th>
+		<th>Item</th>
+		<th>Description</th>
+		<th>Picture</th>
+		<th>Selected</th>
+		<th>Amount</th>
+			
+	<!-- !!!!1st ITEM: 2ND ROW!!!!!--->
+		</tr>
+		<th>item 1</th>
+			<td>item1</td>
+			<td>des1</td>
+			<td>picture1</td>
+			<td><input type="checkbox" name="item1"></td>
+			<td><input type="text" name="item1A"></td>
+		</tr>
+	<!-- !!!!2nd ITEM: 3RD ROW!!!!!--->
+		<tr>
+		<th>item 2</th>
+			<td>item2</td>
+			<td>des2</td>
+			<td>picture2</td>
+			<td><input type="checkbox" name="item2"></td>
+			<td><input type="text" name="item2A"></td>	
+		</tr>
+	<!-- !!!!3rd ITEM: 4TH ROW!!!!!--->
+		<tr>
+		<th>item 3</th>
+			<td>item3</td>
+			<td>des3</td>
+			<td>picture3</td>
+			<td><input type="checkbox" name="item3"></td>
+			<td><input type="text" name="item3A"></td>
+
+		</tr>
+	</table>
+<!--====================================================================
+========================================================================-->
+	User name:<input type="text" name="Login"><br/>
+	Password:<input type="text" name="Password"><br/>
+	<input type="submit" value="buy">
+
+	</form>
+
+
+
+
+</body>
+</html>
