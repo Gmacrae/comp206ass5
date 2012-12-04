@@ -1,0 +1,53 @@
+<html>
+
+<head>
+	
+</head>
+
+<body bgcolor="blue">
+<form action="VERIFY.py" method="post">
+	<table border="10">
+		<tr>	
+		<th>Part Number</th>
+		<th>Part Name</th>
+		<th>Unit Cost</th>
+		<th>Quantity to Buy</th>
+		</tr>
+		<tr bgcolor="grey">
+		<td><font face="Times Roman" size = 12>item 1 numb</font></td>
+		<td>item 1 name</td>
+		<td>item 1 cost</td>
+		<td><input type="text" value="0" name="item1"maxlength="2"></td>
+		</tr>
+		<tr>
+		<td>item 2 numb</td>
+		<td>item 2 name</td>
+		<td>item 2 cost</td>
+		<td><input type="text" value="0" name="item2"maxlength="2"></td>
+		</tr>
+		<tr>
+		<td>item 3 numb</td>
+		<td>item 3 name</td>
+		<td>item 3 cost</td>
+		<td><input type="text" value="0" name="item3"maxlength="2"></td>
+		</tr>
+		<tr>
+		<td>item 4 numb</td>
+		<td>item 4 name</td>
+		<td>item 4 cost</td>
+		<td><input type="text"  value="0" name="item4"maxlength="2"</td>
+		</tr>
+		<tr>
+		<td>item 5 numb</td>
+		<td>item 5 name</td>
+		<td>item 5 cost</td>
+		<td><input type="text" value="0" name="item5" maxlength="2" ></td>
+		</tr>		
+
+
+	</table>
+	<input type="submit" value="buy">
+</form>
+</body>
+
+</html>

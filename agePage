@@ -4,8 +4,10 @@
 	</head>
 	<body>
 	
-		<form action="test2.cgi" method="get">
-			Age: <input name="myAge" type="text">
+		<form action="test.py" method="get">
+	
+			Age: <input name="myAge" type="text"><br />
+			Name: <input type="text" name="myName"><br />
 			<input type="submit">
 		</form>
 </body>

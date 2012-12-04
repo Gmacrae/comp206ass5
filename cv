@@ -1,0 +1,7 @@
+<html>
+<frameset rows="20%,80%">
+	<frame src="title.html">
+	<frame src="body.html">
+</frameset>
+
+</html>

@@ -139,6 +139,9 @@ int menu(char *type)
 		printf("</head>");
 	
 		printf("<body>\n <form name=\"input\" action=\"menu.cgi\" method=\"get\">");
+		
+		printf("<input type=\"hidden\" name=\"type\" value=\"SYSTEM\">");
+
 
 		printf("<input type=\"radio\" name=\"opt\" value=\"a\" >ADD<br />");
 		printf("Username<input type=\"text\"  name=\"user\">");
@@ -162,7 +165,7 @@ int menu(char *type)
 		printf("Password<input type=\"text\" name=\"pass\">");
 
 		printf("<br /><br /><input type=\"radio\" name=\"opt\" value=\"i\">Inventory<br />");
-		printf("<input type=\"hidden\" name=\"type\" value=\"SYSTEM\">");
+		//printf("<input type=\"hidden\" name=\"type\" value=\"SYSTEM\">");
 
 		printf("<input type=\"submit\" value=\"Submit\">\n</form>\n</center></body></html>");
 	
